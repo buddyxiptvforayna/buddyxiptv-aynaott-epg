@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: epg-service
+    env: node
+    buildCommand: npm install
+    startCommand: node epg-server.js
+    envVars:
+      - key: PORT
+        value: 3000 
